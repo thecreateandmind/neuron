@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -6,6 +6,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   templateUrl: './chat-rooms.component.html',
-  styleUrl: './chat-rooms.component.css'
+  styleUrl: './chat-rooms.component.css',
+  encapsulation: 2  // ViewEncapsulation.None
 })
 export class ChatRoomsComponent {}

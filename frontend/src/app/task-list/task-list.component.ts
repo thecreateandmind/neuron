@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -6,6 +6,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   templateUrl: './task-list.component.html',
-  styleUrl: './task-list.component.css'
+  styleUrl: './task-list.component.css',
+  encapsulation: 2  // ViewEncapsulation.None
 })
 export class TaskListComponent {}

@@ -3,7 +3,7 @@
 <html lang="hu"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Kaland TanulÃ¡s - Csoportos Chat</title>
+<title>Kaland Tanulás - Csoportos Chat</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -110,13 +110,13 @@
 <!-- SideNavBar (Predicted from JSON) -->
 <nav class="h-full w-64 fixed left-0 top-0 bg-surface-container-low shadow-sm flex flex-col p-4 gap-base z-50">
 <div class="mb-lg px-2">
-<h1 class="font-display text-headline-md text-primary">TanulÃ³ PortÃ¡l</h1>
-<p class="font-body-md text-on-surface-variant opacity-70">9-12 Ã©veseknek</p>
+<h1 class="font-display text-headline-md text-primary">Tanuló Portál</h1>
+<p class="font-body-md text-on-surface-variant opacity-70">9-12 éveseknek</p>
 </div>
 <div class="flex flex-col gap-2">
 <a class="flex items-center gap-4 text-on-surface-variant p-4 hover:bg-surface-container-high transition-colors rounded-xl group active:scale-95 duration-200" href="#">
 <span class="material-symbols-outlined">home</span>
-<span class="font-body-md">KezdÅlap</span>
+<span class="font-body-md">Kezdőlap</span>
 </a>
 <a class="flex items-center gap-4 text-on-surface-variant p-4 hover:bg-surface-container-high transition-colors rounded-xl group active:scale-95 duration-200" href="#">
 <span class="material-symbols-outlined">assignment</span>
@@ -134,7 +134,7 @@
 <div class="mt-auto p-2">
 <button class="w-full bg-secondary text-on-secondary py-3 rounded-xl font-bold active:scale-95 transition-transform flex items-center justify-center gap-2">
 <span class="material-symbols-outlined">add</span>
-                Ãj feladat
+                Új feladat
             </button>
 </div>
 </nav>
@@ -143,7 +143,7 @@
 <!-- TopAppBar (Predicted from JSON) -->
 <header class="flex justify-between items-center h-20 px-md sticky top-0 z-40 bg-surface shadow-sm">
 <div class="flex items-center gap-4">
-<span class="font-display text-headline-md text-primary">Kaland TanulÃ¡s</span>
+<span class="font-display text-headline-md text-primary">Kaland Tanulás</span>
 </div>
 <div class="flex items-center gap-6">
 <div class="flex items-center gap-2 bg-secondary-container px-4 py-2 rounded-full">
@@ -154,7 +154,7 @@
 <button class="hover:bg-surface-container rounded-full p-2 active:scale-90 transition-transform">
 <span class="material-symbols-outlined">notifications</span>
 </button>
-<img alt="FelhasznÃ¡lÃ³i avatar" class="w-10 h-10 rounded-full border-2 border-primary" data-alt="A cheerful close-up portrait of a 10-year-old student with a bright smile, wearing a modern blue hoodie. The background is a soft-focus classroom with colorful educational posters. The lighting is warm and inviting, capturing a high-key, professional child photography style that fits a modern-minimalist educational platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASEMahyUvW8spAmwaMsY1VY7Xtxf7CwKupDieiv5idLl08yy96uJ_fSSFQclgNv7FRGfTss8tDktKDfJDkta5A9RFa_fQ7UGTNjB3z1fGMJ9gQGeI2Ql9ZPTGP4w2PaYaiGB0Ro2K2KzplzD8S7sSltYCUKyOWHGYRN6bntmjHhpnZv0YKn4Bq5wskGNO5vMz127qkpyRaUk1_GfWigQcNPWUH3TjdTuUORpjsxEDPnKO3y5gf73CWoo5LC3j9Z2jiaXUFtWo5tDA"/>
+<img alt="Felhasználói avatar" class="w-10 h-10 rounded-full border-2 border-primary" data-alt="A cheerful close-up portrait of a 10-year-old student with a bright smile, wearing a modern blue hoodie. The background is a soft-focus classroom with colorful educational posters. The lighting is warm and inviting, capturing a high-key, professional child photography style that fits a modern-minimalist educational platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASEMahyUvW8spAmwaMsY1VY7Xtxf7CwKupDieiv5idLl08yy96uJ_fSSFQclgNv7FRGfTss8tDktKDfJDkta5A9RFa_fQ7UGTNjB3z1fGMJ9gQGeI2Ql9ZPTGP4w2PaYaiGB0Ro2K2KzplzD8S7sSltYCUKyOWHGYRN6bntmjHhpnZv0YKn4Bq5wskGNO5vMz127qkpyRaUk1_GfWigQcNPWUH3TjdTuUORpjsxEDPnKO3y5gf73CWoo5LC3j9Z2jiaXUFtWo5tDA"/>
 </div>
 </div>
 </header>
@@ -165,7 +165,7 @@
 <div class="p-md">
 <div class="relative">
 <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
-<input class="w-full bg-white border-2 border-surface-variant/20 rounded-xl py-2 pl-10 pr-4 focus:border-primary focus:ring-0 transition-all font-body-md text-sm outline-none" placeholder="KeresÃ©s..." type="text"/>
+<input class="w-full bg-white border-2 border-surface-variant/20 rounded-xl py-2 pl-10 pr-4 focus:border-primary focus:ring-0 transition-all font-body-md text-sm outline-none" placeholder="Keresés..." type="text"/>
 </div>
 </div>
 <div class="flex-1 overflow-y-auto custom-scrollbar px-2 space-y-1">
@@ -179,7 +179,7 @@
 <span class="font-bold text-on-surface truncate">5.A Matek</span>
 <span class="text-[10px] text-on-surface-variant">14:20</span>
 </div>
-<p class="text-sm text-on-surface-variant truncate">SÃ¡ri: NÃ©zzÃ©tek meg a 12. oldalt!</p>
+<p class="text-sm text-on-surface-variant truncate">Sári: Nézzétek meg a 12. oldalt!</p>
 </div>
 </button>
 <!-- Other Chat Rooms -->
@@ -192,7 +192,7 @@
 <span class="font-bold text-on-surface truncate">Suli Kalandok</span>
 <span class="text-[10px] text-on-surface-variant">Tegnap</span>
 </div>
-<p class="text-sm text-on-surface-variant truncate">Peti: Ki jÃ¶n holnap focizni?</p>
+<p class="text-sm text-on-surface-variant truncate">Peti: Ki jön holnap focizni?</p>
 </div>
 </button>
 <button class="w-full flex items-center gap-3 p-3 hover:bg-surface-container-high/50 rounded-xl text-left transition-colors">
@@ -201,10 +201,10 @@
 </div>
 <div class="flex-1 overflow-hidden">
 <div class="flex justify-between items-center">
-<span class="font-bold text-on-surface truncate">TermÃ©szetbÃºvÃ¡rok</span>
+<span class="font-bold text-on-surface truncate">Természetbúvárok</span>
 <span class="text-[10px] text-on-surface-variant">Kedd</span>
 </div>
-<p class="text-sm text-on-surface-variant truncate">TanÃ¡rnÅ: KÃ¼ldtem a vÃ¡zlatot...</p>
+<p class="text-sm text-on-surface-variant truncate">Tanárnő: Küldtem a vázlatot...</p>
 </div>
 </button>
 <button class="w-full flex items-center gap-3 p-3 hover:bg-surface-container-high/50 rounded-xl text-left transition-colors">
@@ -213,10 +213,10 @@
 </div>
 <div class="flex-1 overflow-hidden">
 <div class="flex justify-between items-center">
-<span class="font-bold text-on-surface truncate">ZsÃ³fi</span>
-<span class="text-[10px] text-on-surface-variant">1 Ã³rÃ¡ja</span>
+<span class="font-bold text-on-surface truncate">Zsófi</span>
+<span class="text-[10px] text-on-surface-variant">1 órája</span>
 </div>
-<p class="text-sm text-on-surface-variant truncate">Szia! Megvan a hÃ¡zid?</p>
+<p class="text-sm text-on-surface-variant truncate">Szia! Megvan a házid?</p>
 </div>
 </button>
 </div>
@@ -231,7 +231,7 @@
 </div>
 <div>
 <h2 class="font-bold text-on-surface">5.A Matek</h2>
-<p class="text-xs text-secondary font-medium">12 osztÃ¡lytÃ¡rs online</p>
+<p class="text-xs text-secondary font-medium">12 osztálytárs online</p>
 </div>
 </div>
 <div class="flex items-center gap-2">
@@ -251,11 +251,11 @@
 </div>
 <!-- Inbound Message -->
 <div class="flex items-start gap-3 max-w-[80%]">
-<img alt="SÃ¡ri avatar" class="w-8 h-8 rounded-full" data-alt="Close-up avatar of a young student girl with braided hair and an inquisitive expression. The lighting is studio-quality, bright, and airy. The background is a soft mint green, maintaining the educational brand palette. The image is clean and high-resolution, suitable for a professional chat interface." src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<img alt="Sári avatar" class="w-8 h-8 rounded-full" data-alt="Close-up avatar of a young student girl with braided hair and an inquisitive expression. The lighting is studio-quality, bright, and airy. The background is a soft mint green, maintaining the educational brand palette. The image is clean and high-resolution, suitable for a professional chat interface." src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
 <div class="flex flex-col gap-1">
-<span class="text-xs font-bold text-on-surface-variant px-1">SÃ¡ri</span>
+<span class="text-xs font-bold text-on-surface-variant px-1">Sári</span>
 <div class="bg-white p-3 shadow-sm message-bubble-inbound border border-surface-variant/10">
-<p class="text-on-surface font-body-md text-sm">Sziasztok! Meg tudja valaki mondani, mi volt a matek hÃ¡zi? ð</p>
+<p class="text-on-surface font-body-md text-sm">Sziasztok! Meg tudja valaki mondani, mi volt a matek házi? 📐</p>
 </div>
 <span class="text-[10px] text-on-surface-variant px-1">14:15</span>
 </div>
@@ -264,7 +264,7 @@
 <div class="flex items-start gap-3 flex-row-reverse max-w-[80%] ml-auto">
 <div class="flex flex-col gap-1 items-end">
 <div class="bg-primary text-white p-3 shadow-md message-bubble-outbound">
-<p class="font-body-md text-sm">Persze! A tankÃ¶nyv 45. oldalÃ¡n az 1-es Ã©s a 3-as feladat.</p>
+<p class="font-body-md text-sm">Persze! A tankönyv 45. oldalán az 1-es és a 3-as feladat.</p>
 </div>
 <div class="flex items-center gap-1 px-1">
 <span class="text-[10px] text-on-surface-variant">14:18</span>
@@ -278,7 +278,7 @@
 <div class="flex flex-col gap-1">
 <span class="text-xs font-bold text-on-surface-variant px-1">Marci</span>
 <div class="bg-white p-3 shadow-sm message-bubble-inbound border border-surface-variant/10 space-y-2">
-<p class="text-on-surface font-body-md text-sm">Itt van rÃ³la egy fotÃ³, ha nincs nÃ¡lad a kÃ¶nyv!</p>
+<p class="text-on-surface font-body-md text-sm">Itt van róla egy fotó, ha nincs nálad a könyv!</p>
 <div class="rounded-lg overflow-hidden border-2 border-surface-container cursor-pointer hover:opacity-90 transition-opacity">
 <img alt="Matek feladat" class="w-full h-auto" data-alt="A crisp, high-resolution photo of an open math textbook page showing geometric shapes like triangles and circles. The lighting is bright and even, as if taken on a well-lit study desk. The aesthetic is clean and educational, fitting perfectly into a school-themed digital chat application." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNXjlCewYElbswScZNHc9xp1QNvlVV0kFHLQF5VRJ4WyIX0AwrAhHMliLdGmKqERbH198wQV1ImYwWOAy82nILCjeeCmFQsQVSkxtHPXQPXBJCii5oRIhldrs9e6rPD7oE76w8GtmKqigFZYvkRSD91N62uJ07nilIGoAkcYY0zQu5y6euf9D88v4SZk3SaFpahBhzO2jaZSWRokPo8tWtXQ62LoRkTMXNHHrzcKZN03ebxyzbIjexuxlte4ONGhyia_iNg_GXVig"/>
 </div>
@@ -298,7 +298,7 @@
 <span class="material-symbols-outlined">mood</span>
 </button>
 </div>
-<textarea class="flex-1 bg-transparent border-none focus:ring-0 resize-none font-body-md text-sm py-2 max-h-32 custom-scrollbar" placeholder="Ãrj egy Ã¼zenetet..." rows="1"></textarea>
+<textarea class="flex-1 bg-transparent border-none focus:ring-0 resize-none font-body-md text-sm py-2 max-h-32 custom-scrollbar" placeholder="Írj egy üzenetet..." rows="1"></textarea>
 <div class="flex items-center pb-1 pr-1">
 <button class="bg-primary text-white w-10 h-10 rounded-xl flex items-center justify-center shadow-lg active:scale-95 transition-transform hover:bg-on-primary-fixed-variant">
 <span class="material-symbols-outlined">send</span>

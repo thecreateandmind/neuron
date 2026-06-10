@@ -1,131 +1,130 @@
-﻿<div class="bg-background font-body-md text-on-surface">
-<!-- Top Navigation Bar -->
-<header class="flex justify-between items-center h-20 px-md ml-0 md:ml-64 bg-surface sticky top-0 z-40 shadow-sm">
+﻿<!-- Top Navigation Bar -->
+<header class="flex justify-between items-center h-20 px-md ml-0 md:ml-64 bg-surface dark:bg-on-background sticky top-0 z-40 shadow-sm">
 <div class="flex items-center gap-sm">
-<h1 class="font-display text-headline-md text-primary">Kaland TanulĂˇs</h1>
+<h1 class="font-display text-headline-md text-primary dark:text-primary-fixed-dim">Kaland Tanulás</h1>
 </div>
 <div class="flex items-center gap-md">
 <div class="hidden md:flex items-center bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full font-bold">
-<span class="material-symbols-outlined mr-2">military_tech</span>
+<span class="material-symbols-outlined mr-2" data-icon="military_tech">military_tech</span>
                 1,250 Pont
             </div>
 <div class="flex items-center gap-base">
-<button class="hover:bg-surface-container rounded-full p-2 transition-colors">
-<span class="material-symbols-outlined text-primary">notifications</span>
+<button class="hover:bg-surface-container dark:hover:bg-surface-variant rounded-full p-2 transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="notifications">notifications</span>
 </button>
 <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-fixed">
-<img alt="FelhasznĂˇlĂłi avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBXR5o6KTXMqCVPkpdWOYIxncgBFmwPU09H3zIbHr4pHMYH4UC9pMeO2bxXHsXuFQ0eCqb2EScxhIhNQ6w2XTa46gxFY2VwwodE7N0YQLw6H-FnItNsLSYPZ7-vttU4wDBVik0QmViNliZPaiyB5isInYjG732Ck5lDc9jrFDVYvvJMzDnpxu033L439pXCOFwcKIpkz6RMtEQJb1jBH6s6NNm9HqA7rn1P498lQ_3OlF7IyzF8NiJonf0PIRIGeqZJaZLwh5XHDs"/>
+<img alt="Felhasználói avatar" class="w-full h-full object-cover" data-alt="A cheerful 3D avatar of a young student wearing bright yellow headphones and a friendly smile. The character is set against a clean, soft-focus classroom background with pastel tones of sky blue and mint green. High-key studio lighting emphasizes the smooth, playful textures of the 3D model, creating an inviting and safe educational atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBXR5o6KTXMqCVPkpdWOYIxncgBFmwPU09H3zIbHr4pHMYH4UC9pMeO2bxXHsXuFQ0eCqb2EScxhIhNQ6w2XTa46gxFY2VwwodE7N0YQLw6H-FnItNsLSYPZ7-vttU4wDBVik0QmViNliZPaiyB5isInYjG732Ck5lDc9jrFDVYvvJMzDnpxu033L439pXCOFwcKIpkz6RMtEQJb1jBH6s6NNm9HqA7rn1P498lQ_3OlF7IyzF8NiJonf0PIRIGeqZJaZLwh5XHDs"/>
 </div>
 </div>
 </div>
 </header>
 <!-- Side Navigation -->
-<nav class="hidden md:flex flex-col h-screen p-4 gap-base bg-surface-container-low shadow-sm h-full w-64 fixed left-0 top-0">
+<nav class="hidden md:flex flex-col h-screen p-4 gap-base bg-surface-container-low dark:bg-on-background shadow-sm h-full w-64 fixed left-0 top-0">
 <div class="mb-xl px-4">
-<div class="font-display text-headline-md text-primary mb-1">TanulĂł PortĂˇl</div>
-<div class="font-body-md text-on-surface-variant opacity-70">9-12 Ă©veseknek</div>
+<div class="font-display text-headline-md text-primary dark:text-primary-fixed-dim mb-1">Tanuló Portál</div>
+<div class="font-body-md text-on-surface-variant opacity-70">9-12 éveseknek</div>
 </div>
 <div class="space-y-2">
-<a class="flex items-center gap-4 text-on-surface-variant p-4 hover:bg-surface-container-high transition-colors rounded-xl" [routerLink]="['/']">
-<span class="material-symbols-outlined">home</span>
-<span class="font-label-lg">KezdĹ‘lap</span>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant p-4 hover:bg-surface-container-high transition-colors rounded-xl" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-lg">Kezdőlap</span>
 </a>
-<a class="flex items-center gap-4 bg-primary-container text-on-primary-container rounded-xl p-4 shadow-sm" [routerLink]="['/tasks']">
-<span class="material-symbols-outlined">assignment</span>
+<a class="flex items-center gap-4 bg-primary-container dark:bg-primary-fixed-dim text-on-primary-container dark:text-on-primary-fixed rounded-xl p-4 shadow-sm" href="#">
+<span class="material-symbols-outlined" data-icon="assignment">assignment</span>
 <span class="font-label-lg">Feladatok</span>
 </a>
-<a class="flex items-center gap-4 text-on-surface-variant p-4 hover:bg-surface-container-high transition-colors rounded-xl" [routerLink]="['/chat']">
-<span class="material-symbols-outlined">chat</span>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant p-4 hover:bg-surface-container-high transition-colors rounded-xl" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
 <span class="font-label-lg">Chat</span>
 </a>
-<a class="flex items-center gap-4 text-on-surface-variant p-4 hover:bg-surface-container-high transition-colors rounded-xl" href="#">
-<span class="material-symbols-outlined">person</span>
+<a class="flex items-center gap-4 text-on-surface-variant dark:text-surface-variant p-4 hover:bg-surface-container-high transition-colors rounded-xl" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
 <span class="font-label-lg">Profil</span>
 </a>
 </div>
 <div class="mt-auto p-4">
 <button class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold flex items-center justify-center gap-2 squishy-btn transition-transform">
-<span class="material-symbols-outlined">add</span>
-                Ăšj feladat
+<span class="material-symbols-outlined" data-icon="add">add</span>
+                Új feladat
             </button>
 </div>
 </nav>
 <!-- Main Content Canvas -->
 <main class="ml-0 md:ml-64 p-margin-mobile md:p-margin-desktop max-w-[1200px]">
 <!-- Breadcrumb / Back Action -->
-<button class="flex items-center gap-2 text-primary mb-md font-bold group" [routerLink]="['/tasks']">
-<span class="material-symbols-outlined transition-transform group-hover:-translate-x-1">arrow_back</span>
+<button class="flex items-center gap-2 text-primary mb-md font-bold group">
+<span class="material-symbols-outlined transition-transform group-hover:-translate-x-1" data-icon="arrow_back">arrow_back</span>
             Vissza a feladatokhoz
         </button>
 <!-- Task Details Section -->
 <section class="bg-surface-container-lowest rounded-xl custom-shadow p-lg mb-lg border border-surface-variant/30">
 <div class="mb-lg">
-<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-label-sm uppercase tracking-wider mb-sm inline-block">TermĂ©szettudomĂˇny</span>
-<h2 class="font-display text-headline-lg mb-md leading-tight text-primary">FEDEZZĂśK FEL AZ ERDĹ Ă‰LETĂ‰T! đźŚ˛</h2>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-label-sm uppercase tracking-wider mb-sm inline-block">Természettudomány</span>
+<h2 class="font-display text-headline-lg mb-md leading-tight text-primary">FEDEZZÜK FEL AZ ERDŐ ÉLETÉT! 🌲</h2>
 <p class="font-body-lg text-on-surface-variant mb-lg max-w-3xl">
-                    Ebben a feladatban egy kĂ¶zeli erdĹ‘ vagy park nĂ¶vĂ©nyeit Ă©s Ăˇllatait kell megfigyelned. KĂ©szĂ­ts fotĂłt legalĂˇbb hĂˇrom kĂĽlĂ¶nbĂ¶zĹ‘ levĂ©lrĹ‘l, Ă©s Ă­rd le, mit tapasztaltĂˇl a termĂ©szetben!
+                    Ebben a feladatban egy közeli erdő vagy park növényeit és állatait kell megfigyelned. Készíts fotót legalább három különböző levélről, és írd le, mit tapasztaltál a természetben!
                 </p>
 </div>
 <!-- Task Images Bento Grid -->
 <div class="grid grid-cols-1 md:grid-cols-3 gap-md mb-lg">
 <div class="md:col-span-2 h-[300px] rounded-xl overflow-hidden shadow-sm relative group">
-<img alt="ErdĹ‘ rĂ©szlete" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<img alt="Erdő részlete" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A lush, sun-drenched forest scene designed in a friendly, high-saturation style for children. Vibrant green leaves are dappled with golden sunlight filtering through the canopy. The mood is magical and explorative, using a soft tactile aesthetic with smooth textures and a bright sky-blue sky visible through the branches. The color palette is dominated by rich emerald greens and warm earthy browns." src=""/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end p-md">
-<span class="text-white font-bold">InspirĂˇciĂł: Egy sĹ±rĹ± bĂĽkkerdĹ‘</span>
+<span class="text-white font-bold">Inspiráció: Egy sűrű bükkerdő</span>
 </div>
 </div>
 <div class="grid grid-rows-2 gap-md">
 <div class="rounded-xl overflow-hidden shadow-sm h-full">
-<img alt="LevĂ©l kĂ¶zeli kĂ©pe" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFydhLhbWsqhF2doeyBkEA-IaOyMUmdzcbq1RvCBwCeg81QET221BujvAZnBTowMX4FGfsLIZq4tpeQTlmiWIicRZ7XQ09YGHMhpZWtRbS2Vm5_kAkeKUsyrh9RNzXWRI4ep_0GCZ8co-bhKMjnKTvBE-LBUYTIu69F4oQimjbS0d3Md3U_SKmi_PRcJr9hukrO67SEW4bd5NBBt8R3Z6FEJtSHSBipr2BbxoSVFPVG0jlUNgKdawE3dRVBBbnzFpV-NrwREjwysE"/>
+<img alt="Levél közeli képe" class="w-full h-full object-cover" data-alt="A macro photography style illustration of a single, vibrant maple leaf resting on a mossy stone. The lighting is soft and natural, highlighting the intricate vein patterns of the leaf in high detail. The colors are bright and cheerful, featuring a mix of forest green and sunny yellow tones. The background is a soft, blurred palette of mint and sky blue, creating a focused but breathable visual environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFydhLhbWsqhF2doeyBkEA-IaOyMUmdzcbq1RvCBwCeg81QET221BujvAZnBTowMX4FGfsLIZq4tpeQTlmiWIicRZ7XQ09YGHMhpZWtRbS2Vm5_kAkeKUsyrh9RNzXWRI4ep_0GCZ8co-bhKMjnKTvBE-LBUYTIu69F4oQimjbS0d3Md3U_SKmi_PRcJr9hukrO67SEW4bd5NBBt8R3Z6FEJtSHSBipr2BbxoSVFPVG0jlUNgKdawE3dRVBBbnzFpV-NrwREjwysE"/>
 </div>
 <div class="rounded-xl overflow-hidden shadow-sm h-full">
-<img alt="Gyerek nagyĂ­tĂłval" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYMD8ur6jVTsM9iVxLolQ6eybTK2brM6tOJ97ZwJ-cNq7ds6CGKGJZe3QKei8eh98Z6BnwUmRQ_nziN78x3JEHfEOGOAbpijW3zvpwJ0TZj6LpazoCVFWP6aEZ65y_y-8YYbVYvs8N0nzxTaD5phEwkcGtChcRX-f-JZQU-r2QJfsY1BoYe7R6dxsz90l3ylEx0iAynTIvxKubwZ3J7BBNUnhqKk_BMTUMm0qC4hYxYSlnjQ6MuOWAD9pbY7m7GLW7GAtrgUiQSuY"/>
+<img alt="Gyerek nagyítóval" class="w-full h-full object-cover" data-alt="A cheerful, minimalist 3D rendering of a bright blue magnifying glass held by a stylized child's hand. The scene is bright and airy, representing curiosity and learning. The background is a clean white surface with subtle soft shadows. The overall aesthetic is toy-like and professional, using a sky blue and mint green color scheme to foster a sense of safe exploration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYMD8ur6jVTsM9iVxLolQ6eybTK2brM6tOJ97ZwJ-cNq7ds6CGKGJZe3QKei8eh98Z6BnwUmRQ_nziN78x3JEHfEOGOAbpijW3zvpwJ0TZj6LpazoCVFWP6aEZ65y_y-8YYbVYvs8N0nzxTaD5phEwkcGtChcRX-f-JZQU-r2QJfsY1BoYe7R6dxsz90l3ylEx0iAynTIvxKubwZ3J7BBNUnhqKk_BMTUMm0qC4hYxYSlnjQ6MuOWAD9pbY7m7GLW7GAtrgUiQSuY"/>
 </div>
 </div>
 </div>
 <div class="flex flex-wrap gap-md items-center bg-surface-container-low p-md rounded-xl">
 <div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary">timer</span>
+<span class="material-symbols-outlined text-secondary" data-icon="timer">timer</span>
 <span class="font-bold text-on-surface">45 perc</span>
 </div>
 <div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-tertiary-container">star</span>
+<span class="material-symbols-outlined text-tertiary-container" data-icon="star">star</span>
 <span class="font-bold text-on-surface">150 Pont</span>
 </div>
 <div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary">verified</span>
-<span class="font-bold text-on-surface">KĂ¶zepes szint</span>
+<span class="material-symbols-outlined text-primary" data-icon="verified">verified</span>
+<span class="font-bold text-on-surface">Közepes szint</span>
 </div>
 </div>
 </section>
 <!-- Solution Upload Zone -->
 <section class="bg-surface-container-lowest rounded-xl custom-shadow p-lg border-2 border-dashed border-primary-fixed hover:border-primary transition-colors">
 <h3 class="font-headline-md mb-lg flex items-center gap-2">
-<span class="material-symbols-outlined text-primary">cloud_upload</span>
-                MegoldĂˇs feltĂ¶ltĂ©se
+<span class="material-symbols-outlined text-primary" data-icon="cloud_upload">cloud_upload</span>
+                Megoldás feltöltése
             </h3>
 <div class="upload-zone flex flex-col items-center justify-center p-xl border-2 border-dashed border-outline-variant rounded-xl cursor-pointer hover:bg-primary-fixed/20 transition-all group mb-lg" id="drop-zone">
 <div class="w-20 h-20 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined" style="font-size: 2.5rem;">upload_file</span>
+<span class="material-symbols-outlined !text-4xl" data-icon="upload_file">upload_file</span>
 </div>
-<p class="font-headline-md text-primary mb-2">HĂşzd ide a fĂˇjlokat!</p>
-<p class="text-on-surface-variant">vagy kattints ide a tallĂłzĂˇshoz (PNG, JPG, PDF)</p>
+<p class="font-headline-md text-primary mb-2">Húzd ide a fájlokat!</p>
+<p class="text-on-surface-variant">vagy kattints ide a tallózáshoz (PNG, JPG, PDF)</p>
 <input class="hidden" id="file-input" multiple="" type="file"/>
 </div>
 <!-- Notes Input -->
 <div class="mb-lg">
-<label class="font-label-lg text-on-surface mb-2 block" for="notes">MegjegyzĂ©s a tanĂˇrodnak (opcionĂˇlis)</label>
-<textarea class="w-full min-h-[120px] bg-surface-container rounded-xl border-2 border-transparent focus:border-primary focus:ring-0 p-md font-body-md transition-all placeholder:text-on-surface-variant/50" id="notes" placeholder="Ide Ă­rd a tapasztalataidat..."></textarea>
+<label class="font-label-lg text-on-surface mb-2 block" for="notes">Megjegyzés a tanárodnak (opcionális)</label>
+<textarea class="w-full min-h-[120px] bg-surface-container rounded-xl border-2 border-transparent focus:border-primary focus:ring-0 p-md font-body-md transition-all placeholder:text-on-surface-variant/50" id="notes" placeholder="Ide írd a tapasztalataidat..."></textarea>
 </div>
 <!-- Submission Footer -->
 <div class="flex flex-col md:flex-row justify-between items-center gap-md">
 <div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-secondary">info</span>
-<span class="text-label-sm italic">A feltĂ¶ltĂ¶tt fĂˇjlok nem haladhatjĂˇk meg a 10MB-ot.</span>
+<span class="material-symbols-outlined text-secondary" data-icon="info">info</span>
+<span class="text-label-sm italic">A feltöltött fájlok nem haladhatják meg a 10MB-ot.</span>
 </div>
-<button class="w-full md:w-auto px-xl py-4 bg-primary text-on-primary font-display text-headline-md rounded-xl squishy-btn shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2" [routerLink]="['/success']">
-                    BekĂĽldĂ©s
-                    <span class="material-symbols-outlined">send</span>
+<button class="w-full md:w-auto px-xl py-4 bg-primary text-on-primary font-display text-headline-md rounded-xl squishy-btn shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                    Beküldés
+                    <span class="material-symbols-outlined" data-icon="send">send</span>
 </button>
 </div>
 </section>
@@ -133,11 +132,59 @@
 <!-- Success Toast (Hidden by default) -->
 <div class="fixed bottom-lg right-lg bg-secondary-container text-on-secondary-container p-md rounded-xl shadow-lg flex items-center gap-4 translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="success-toast">
 <div class="w-10 h-10 bg-secondary text-white rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined">check_circle</span>
+<span class="material-symbols-outlined" data-icon="check_circle">check_circle</span>
 </div>
 <div>
-<p class="font-bold">SzĂ©p munka!</p>
-<p class="text-label-sm">A feladatodat sikeresen elmentettĂĽk.</p>
+<p class="font-bold">Szép munka!</p>
+<p class="text-label-sm">A feladatodat sikeresen elmentettük.</p>
 </div>
 </div>
-</div>
+<script>
+        const dropZone = document.getElementById('drop-zone');
+        const fileInput = document.getElementById('file-input');
+
+        dropZone.addEventListener('click', () => fileInput.click());
+
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('drag-over');
+        });
+
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, () => {
+                dropZone.classList.remove('drag-over');
+            });
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            const files = e.dataTransfer.files;
+            handleFiles(files);
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            handleFiles(e.target.files);
+        });
+
+        function handleFiles(files) {
+            if (files.length > 0) {
+                // Visual feedback for file selection
+                const dropZoneText = dropZone.querySelector('.text-primary');
+                dropZoneText.textContent = `${files.length} fájl kiválasztva`;
+                dropZone.querySelector('.material-symbols-outlined').textContent = 'check_circle';
+                dropZone.classList.add('bg-secondary-container/30', 'border-secondary');
+            }
+        }
+
+        // Simple button click interaction
+        document.querySelector('button.bg-primary').addEventListener('click', function() {
+            const toast = document.getElementById('success-toast');
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+            
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+                toast.classList.remove('translate-y-0', 'opacity-100');
+            }, 4000);
+        });
+    </script>
