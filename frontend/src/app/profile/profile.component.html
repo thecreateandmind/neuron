@@ -1,0 +1,89 @@
+﻿<!-- Confetti Container -->
+<div class="fixed inset-0 pointer-events-none z-0" id="confetti-wrapper"></div>
+<main class="relative z-10 w-full max-w-[600px] flex flex-col items-center text-center">
+<!-- Character / Success Visual Section -->
+<div class="relative mb-lg">
+<!-- Background Decorative Shape -->
+<div class="absolute inset-0 bg-secondary-fixed opacity-20 rounded-full blur-3xl scale-150 animate-pulse"></div>
+<div class="relative bg-white rounded-full p-8 card-shadow animate-bounce-gentle">
+<img alt="Boldog robot karakter" class="w-48 h-48 md:w-56 md:h-56" data-alt="A friendly, cute 3D educational robot character with big expressive digital eyes and a wide happy smile, rendered in a soft tactile clay style. The robot is colored in vibrant mint green and sky blue, floating in a bright minimalist environment with soft cinematic lighting and pastel-colored geometric sparks in the background to convey a sense of joy and achievement." src=""/>
+</div>
+<!-- Floating Badges -->
+<div class="absolute -top-4 -right-4 bg-tertiary-fixed text-on-tertiary-fixed font-bold px-4 py-2 rounded-full card-shadow flex items-center gap-2 transform rotate-12">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span class="font-label-lg text-label-lg">+50 Pont</span>
+</div>
+</div>
+<!-- Success Message Content -->
+<div class="space-y-sm mb-xl">
+<h1 class="font-display text-display text-primary leading-none">Szuper vagy!</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[400px] mx-auto">
+                A feladatodat sikeresen feltöltöttük a Tanuló Portálra. A tanárod hamarosan megtekinti!
+            </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col md:flex-row gap-md w-full justify-center">
+<button class="btn-press flex items-center justify-center gap-base bg-white border-2 border-secondary text-secondary px-8 py-4 rounded-xl font-label-lg text-label-lg transition-all hover:bg-surface-container-low w-full md:w-auto">
+<span class="material-symbols-outlined">visibility</span>
+                Megtekintés
+            </button>
+<button class="btn-press flex items-center justify-center gap-base bg-primary text-white px-10 py-4 rounded-xl font-label-lg text-label-lg shadow-md hover:bg-on-primary-fixed-variant transition-all w-full md:w-auto">
+<span class="material-symbols-outlined">assignment</span>
+                Vissza a feladatokhoz
+            </button>
+</div>
+<!-- Encouragement Toast -->
+<div class="mt-xl bg-secondary-container text-on-secondary-container px-md py-sm rounded-full flex items-center gap-base animate-pulse">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-label-lg text-label-lg">Ez volt a 3. sikeres beküldésed ezen a héten!</span>
+</div>
+</main>
+<!-- Micro-interaction Script -->
+<script>
+        function createConfetti() {
+            const container = document.getElementById('confetti-wrapper');
+            const colors = ['#005db8', '#93f59c', '#da8126', '#ffdcc2', '#4d96ff'];
+            const shapes = ['50%', '0%']; // Circles and Squares
+
+            for (let i = 0; i < 100; i++) {
+                const confetti = document.createElement('div');
+                confetti.classList.add('confetti-piece');
+                
+                const size = Math.random() * 12 + 8 + 'px';
+                confetti.style.width = size;
+                confetti.style.height = size;
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.borderRadius = shapes[Math.floor(Math.random() * shapes.length)];
+                
+                const duration = Math.random() * 3 + 2;
+                const delay = Math.random() * 2;
+                
+                confetti.style.animation = `fall ${duration}s linear ${delay}s forwards`;
+                
+                container.appendChild(confetti);
+
+                // Cleanup
+                setTimeout(() => {
+                    confetti.remove();
+                }, (duration + delay) * 1000);
+            }
+        }
+
+        // Trigger confetti on load
+        window.addEventListener('DOMContentLoaded', () => {
+            createConfetti();
+            // Occasional bursts
+            setInterval(createConfetti, 6000);
+        });
+
+        // Add "squishy" feel to buttons manually for extra tactile feedback
+        document.querySelectorAll('.btn-press').forEach(btn => {
+            btn.addEventListener('mousedown', () => {
+                btn.style.transition = 'transform 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+            });
+            btn.addEventListener('mouseup', () => {
+                btn.style.transition = 'transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+            });
+        });
+    </script>
