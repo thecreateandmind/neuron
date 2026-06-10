@@ -1,0 +1,11 @@
+www.neuron.cmai.site {
+    reverse_proxy frontend:80
+}
+
+api.neuron.cmai.site {
+    reverse_proxy backend:3000
+}
+
+n8n.neuron.cmai.site {
+    reverse_proxy n8n:5678
+}

@@ -1,0 +1,52 @@
+services:
+  caddy:
+    image: caddy:2-alpine
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - proxy
+
+  n8n:
+    image: n8nio/n8n
+    restart: always
+    environment:
+      - N8N_HOST=n8n.neuron.cmai.site
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=https
+      - WEBHOOK_URL=https://n8n.neuron.cmai.site/
+      - GENERIC_TIMEZONE=Europe/Budapest
+    volumes:
+      - n8n_data:/home/node/.n8n
+    networks:
+      - proxy
+
+  backend:
+    build: ../backend
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    networks:
+      - proxy
+
+  frontend:
+    build: ../frontend
+    restart: always
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: false
+
+volumes:
+  caddy_data:
+  caddy_config:
+  n8n_data:
