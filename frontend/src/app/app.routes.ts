@@ -4,6 +4,7 @@ import { TaskListComponent } from './task-list/task-list.component';
 import { ChatRoomsComponent } from './chat-rooms/chat-rooms.component';
 import { TaskDetailComponent } from './task-detail/task-detail.component';
 import { SuccessComponent } from './success/success.component';
+import { ProfileComponent } from './profile/profile.component';
 
 export const routes: Routes = [
   { path: '', component: DashboardComponent },
@@ -11,4 +12,5 @@ export const routes: Routes = [
   { path: 'chat', component: ChatRoomsComponent },
   { path: 'task/:id', component: TaskDetailComponent },
   { path: 'success', component: SuccessComponent },
+  { path: 'profile', component: ProfileComponent },
 ];
