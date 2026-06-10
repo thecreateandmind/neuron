@@ -22,6 +22,7 @@ services:
       - N8N_PROTOCOL=https
       - WEBHOOK_URL=https://n8n.neuron.cmai.site/
       - GENERIC_TIMEZONE=Europe/Budapest
+      - N8N_PROXY_HOPS=1
     volumes:
       - n8n_data:/home/node/.n8n
     networks:
